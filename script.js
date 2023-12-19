@@ -23,7 +23,8 @@ gsap.from(".page-2-content h1", {
         start : "top 70%"
     },
     y : -60,
-    duration : 1.5
+    duration : 1.5,
+    opacity : 0
 })
 gsap.from(".page-2-content h3", {
     scrollTrigger : {
@@ -33,17 +34,19 @@ gsap.from(".page-2-content h3", {
         start : "top 70%"
     },
     y : 60,
-    duration : 1.5
+    duration : 1.5,
+    opacity : 0
 })
-gsap.to(".line", {
+gsap.from(".line", {
     scrollTrigger : {
         trigger : ".line",
         scroller : "body",
         markers : false,
         start : "top 70%"
     },
-    y : -60,
-    duration : 1.5
+    y : 60,
+    duration : 1.5,
+    opacity : 0
 })
 gsap.from(".page-2-content-common img", {
     scrollTrigger : {
@@ -53,7 +56,8 @@ gsap.from(".page-2-content-common img", {
         start : "top 100%"
     },
     x : -100,
-    duration : 1.5
+    duration : 1.5,
+    opacity : 0
 })
 
 
