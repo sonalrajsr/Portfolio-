@@ -14,6 +14,48 @@ gsap.from(image_page1, {
     duration : 1.5
 })
 
+//  page 2 starts
+gsap.from(".page-2-content h1", {
+    scrollTrigger : {
+        trigger : ".page-2-content h1",
+        scroller : "body",
+        markers : false,
+        start : "top 70%"
+    },
+    y : -60,
+    duration : 1.5
+})
+gsap.from(".page-2-content h3", {
+    scrollTrigger : {
+        trigger : ".page-2-content h3",
+        scroller : "body",
+        markers : false,
+        start : "top 70%"
+    },
+    y : 60,
+    duration : 1.5
+})
+gsap.to(".line", {
+    scrollTrigger : {
+        trigger : ".line",
+        scroller : "body",
+        markers : false,
+        start : "top 70%"
+    },
+    y : -60,
+    duration : 1.5
+})
+gsap.from(".page-2-content-common img", {
+    scrollTrigger : {
+        trigger : ".line",
+        scroller : "body",
+        markers : false,
+        start : "top 100%"
+    },
+    x : -100,
+    duration : 1.5
+})
+
 
 // Educational page starts here
 let edu_text = document.querySelectorAll(".edu-text")
