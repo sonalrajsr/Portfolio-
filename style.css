@@ -221,6 +221,9 @@ html, body {
 
 
 @media (max-width: 900px) {
+    .custom-cursor{
+        display: none;
+    }
     .page-1-content{
         display: flex;
         flex-direction: column;

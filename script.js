@@ -74,7 +74,7 @@ gsap.from(".page-2-content-common img", {
 let edu_text = document.querySelectorAll(".edu-text")
 let text_hover = document.querySelectorAll(".text-hover")
 
-edu_text[0].addEventListener("mouseenter", () => {
+edu_text[0].addEventListener("mouseover", () => {
     gsap.to("#text-hover-1", {
         opacity : 1,
         y : "-100%",
@@ -88,7 +88,7 @@ text_hover[0].addEventListener("mouseout", () => {
         duration : 1.5
     })
 })
-edu_text[1].addEventListener("mouseenter", () => {
+edu_text[1].addEventListener("mouseover", () => {
     gsap.to("#text-hover-2", {
         opacity : 1,
         y : "-100%",
@@ -102,7 +102,7 @@ text_hover[1].addEventListener("mouseout", () => {
         duration : 1.5
     })
 })
-edu_text[2].addEventListener("mouseenter", () => {
+edu_text[2].addEventListener("mouseover", () => {
     gsap.to("#text-hover-3", {
         opacity : 1,
         y : "-100%",
