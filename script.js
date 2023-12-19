@@ -1,3 +1,12 @@
+// custom cursor
+document.addEventListener("mousemove", function(dets) {
+    gsap.to(".custom-cursor",{
+        left : dets.x,
+        top : dets.y
+    })
+    
+})
+
 // page 1 js
 let text_page1 = document.querySelector(".page-1-content .text");
 let image_page1 = document.querySelector('.page-1-content img');
