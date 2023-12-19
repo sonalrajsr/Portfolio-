@@ -73,46 +73,56 @@ gsap.from(".page-2-content-common img", {
 // Educational page starts here
 let edu_text = document.querySelectorAll(".edu-text")
 let text_hover = document.querySelectorAll(".text-hover")
-
+gsap.from(".edu-cards", {
+    scrollTrigger : {
+        trigger : ".edu-cards",
+        scroller : "body",
+        markers : false,
+        start : "top 80%"
+    },
+    ease: "bounce.out",
+    duration : 1,
+    scale : 0
+})
 edu_text[0].addEventListener("mouseover", () => {
     gsap.to("#text-hover-1", {
         opacity : 1,
         y : "-100%",
-        duration : 1.5
+        duration : 1
     })
 })
 text_hover[0].addEventListener("mouseout", () => {
     gsap.to("#text-hover-1", {
         y : "100%",
         opacity : 0,
-        duration : 1.5
+        duration : 1
     })
 })
 edu_text[1].addEventListener("mouseover", () => {
     gsap.to("#text-hover-2", {
         opacity : 1,
         y : "-100%",
-        duration : 1.5
+        duration : 1
     })
 })
 text_hover[1].addEventListener("mouseout", () => {
     gsap.to("#text-hover-2", {
         y : "100%",
         opacity : 0,
-        duration : 1.5
+        duration : 1
     })
 })
 edu_text[2].addEventListener("mouseover", () => {
     gsap.to("#text-hover-3", {
         opacity : 1,
         y : "-100%",
-        duration : 1.5
+        duration : 1
     })
 })
 text_hover[2].addEventListener("mouseout", () => {
     gsap.to("#text-hover-3", {
         y : "100%",
         opacity : 0,
-        duration : 1.5
+        duration : 1
     })
 })
