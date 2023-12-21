@@ -126,3 +126,33 @@ text_hover[2].addEventListener("mouseout", () => {
         duration : 1
     })
 })
+
+
+// page 4 starts here
+let proj_title = document.querySelectorAll(".proj-title");
+let proj_disc = document.querySelectorAll(".proj-disc");
+for (let i =0; i < proj_title.length ; i++ ){
+    gsap.from(proj_title[i], {
+        scrollTrigger : {
+            trigger : proj_title[i],
+            scroller : "body",
+            markers : false,
+            start : "top 80%"
+        },
+        y : 20,
+        duration : 1,
+        opacity : 0
+    })
+    gsap.from(proj_disc[i], {
+        scrollTrigger : {
+            trigger : proj_disc[i],
+            scroller : "body",
+            markers : false,
+            start : "top 80%",
+        },
+        y : 30,
+        duration : 1.2,
+        ease: "back.inOut(1.7)",
+        opacity : 0
+    })
+}

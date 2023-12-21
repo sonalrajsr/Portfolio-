@@ -34,6 +34,7 @@ html, body {
     background-color: #ebdd91;
     border-radius: 50%;
     position: fixed;
+    /* z-index: -10; */
     transform: translate(-50%, -50%);
 }
 .p1-background{
@@ -213,6 +214,50 @@ html, body {
     background-color: #2B46BD;
 }
 
+/* page 4 starts here */
+.p4-background{
+    background-color: #FFEBEB;
+}
+.page-4-content{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    color: #414B3B;
+
+}
+.page-4-content .text{
+    /* background-color: #884526; */
+    margin-top: 4vw;
+}
+.page-4-content h1{
+    position: relative;
+    font-size: 5vw;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.projects{
+    margin-left: 8vw;
+    margin-top: 2vw;
+}
+.projects h2{
+    position: relative;
+    z-index: 1; 
+    font-family: game of squids;
+}
+.projects h3{
+    position: relative;
+    z-index: 1; 
+    font-size: 25px;
+    padding: 10px;
+    font-family: sugarpie;
+}
+
+
+
+
+
+
+
 
 
 
@@ -287,6 +332,9 @@ html, body {
         letter-spacing: 3px;
     }
     .page-3-content h1{
+        font-size: 10vw;
+    }
+    .page-4-content h1{
         font-size: 10vw;
     }
 
