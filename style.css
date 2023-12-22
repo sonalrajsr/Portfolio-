@@ -251,7 +251,17 @@ html, body {
     padding: 10px;
     font-family: sugarpie;
 }
-
+.proj-title{
+    display: flex;
+    gap: 20px;
+}
+.github{
+    background-color: red;
+}
+.github img{
+    height: 40px;
+    width: 40px;
+}
 
 
 
