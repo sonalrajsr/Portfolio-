@@ -156,3 +156,72 @@ for (let i =0; i < proj_title.length ; i++ ){
         opacity : 0
     })
 }
+// page 5 begains here
+let programming = 0;
+let tools = 0;
+let libraries = 0;
+let theories = 0;
+
+document.querySelector("#skill1").addEventListener("click", () => {
+    programming = 1;
+    tools = 0;
+    libraries = 0;
+    theories = 0;
+    if (programming == 1){
+        gsap.to(".programming",{
+            opacity : 1,
+            duration : 1
+        })
+        document.querySelector(".tools").style.opacity = "0";
+        document.querySelector(".libraries").style.opacity = "0";
+        document.querySelector(".theories").style.opacity = "0";
+    }
+
+})
+
+document.querySelector("#skill2").addEventListener("click", () => {
+    programming = 0;
+    tools = 1;
+    libraries = 0;
+    theories = 0;
+    if (tools === 1){
+        gsap.to(".tools",{
+            opacity : 1,
+            duration : 1
+        })
+        document.querySelector(".programming").style.opacity = "0";
+        document.querySelector(".libraries").style.opacity = "0";
+        document.querySelector(".theories").style.opacity = "0";
+
+    }
+})
+document.querySelector("#skill3").addEventListener("click", () => {
+    programming = 0;
+    tools = 0;
+    libraries = 1;
+    theories = 0;
+    if (libraries === 1){
+        gsap.to(".libraries",{
+            opacity : 1,
+            duration : 1
+        })
+        document.querySelector(".programming").style.opacity = "0";
+        document.querySelector(".tools").style.opacity = "0";
+        document.querySelector(".theories").style.opacity = "0";
+    }
+})
+document.querySelector("#skill4").addEventListener("click", () => {
+    programming = 0;
+    tools = 0;
+    libraries = 0;
+    theories = 1;
+    if (theories === 1){
+        gsap.to(".theories",{
+            opacity : 1,
+            duration : 1
+        })
+        document.querySelector(".programming").style.opacity = "0";
+        document.querySelector(".libraries").style.opacity = "0";
+        document.querySelector(".tools").style.opacity = "0";
+    }
+})

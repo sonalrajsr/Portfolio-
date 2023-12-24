@@ -87,6 +87,9 @@ html, body {
     font-family: 'Roboto', sans-serif;
     /* background-color: red; */
 }
+
+
+
 /* page 2 starts here */
 .p2-background{
     background-color: #D8A790;
@@ -133,6 +136,7 @@ html, body {
     width: 150px;
     background-color: #764B36;
 }
+
 
 
 /* Page 3 starts here */
@@ -255,22 +259,92 @@ html, body {
     display: flex;
     gap: 20px;
 }
-.github{
-    background-color: red;
-}
+
 .github img{
     height: 40px;
     width: 40px;
 }
 
-
-
-
-
-
-
-
-
+/* Page 5 begains here */
+.p5-background{
+    background-color: #FAC068;
+}
+.page-5-content .text{
+    padding-top: 6vw;
+}
+.page-5-content h1{
+    position: relative;
+    z-index: 999;
+    font-size: 5vw;
+    margin-left: 4vw;
+}
+.skills-topics{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vw;
+}
+.skill-box{
+    margin-left: 4vw;
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 35%;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.skills-name{
+    text-align: center;
+    border: 2px solid gray;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-family: game of squids;
+}
+.p5-position{
+    position: absolute;
+    /* defined a class for adding position */
+}
+.board-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 5vw; */
+    background-image: url(./assets/board.png);
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+.board-image li{
+    list-style: none;
+    font-family: sugarpie;
+    font-size: 120%;
+}
+.board-text{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    /* background-color: rebeccapurple; */
+    width: 80%;
+    color: white;
+}
+.programming{
+    opacity: 0;
+    
+}
+.tools{
+    opacity: 0;
+}
+.libraries{
+    opacity: 0;
+}
+.theories{
+    opacity: 0;
+    
+}
 
 
 
@@ -347,5 +421,24 @@ html, body {
     .page-4-content h1{
         font-size: 10vw;
     }
+    /* Page 5 starts here */
+    .skills-topics{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 
+    }
+    .skill-box{
+        width: 85%;
+    }
+    .board-image{
+        margin-left: 20px;
+        width: 80%;
+        height: 400px;
+    }
+    .page-5-content h1{
+        font-size: 10vw;
+    }
 }
