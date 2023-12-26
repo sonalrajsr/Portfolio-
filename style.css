@@ -34,6 +34,9 @@ html, body {
     width: 100%;
     height: 100%;
 }
+li{
+    list-style: none;
+}
 
 /* custom cursor */
 .custom-cursor{
@@ -53,11 +56,67 @@ html, body {
     width: 90vw;
     margin-left: 5vw;
 }
+/* navigation */
 .navigation{
-    height: 10vh;
+    height: 75px;
     width: 100%;
-    background-color: black;
+    display: flex;
+    align-items: center;
 }
+
+.navigation .logo{
+    height: 100%;
+    width: 65px;
+    margin-left: 3.5vw;
+    margin-top: 10px;
+} 
+.navigation img {
+    height: 100%;
+    width: 100%;
+}
+.nav-options{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3vw;
+    height: 100%;
+    width: calc(90vw - 60px);
+}
+.nav-options a{
+    text-decoration: none;
+    font-family: game of squids;
+    color: rgb(253, 253, 253);
+}
+/* mobile nav */
+.mob-nav{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 70%;
+    background-color: rgba(12, 12, 10, 0.65);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px gray;
+}
+.mob-nav .nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin: 20px;
+}
+.bar-icon{
+    display: none;
+}
+.bar-icon img, .mob-nav img{
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+/* page 1 */
 .page-1-content{
     display: flex;
     justify-content: space-between;
@@ -526,5 +585,14 @@ html, body {
     .contact{
         width: 80vw;
         padding: 4vw 0vw;    
+    }
+    /* nav responsive */
+    .bar-icon{
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+    .nav-options{
+        display: none;
     }
 }

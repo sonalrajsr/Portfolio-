@@ -295,3 +295,12 @@ gsap.from(".collaborate img", {
     x : -35,
     duration : 1.2
 })
+function sidenav(){
+    gsap.to
+    side_bar = document.querySelector(".mob-nav")
+    side_bar.style.display = 'block'
+}
+function endnav(){
+    collapse_nav = document.querySelector('.mob-nav')
+    side_bar.style.display = 'none'
+}
