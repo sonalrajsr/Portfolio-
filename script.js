@@ -225,3 +225,4 @@ document.querySelector("#skill4").addEventListener("click", () => {
         document.querySelector(".tools").style.opacity = "0";
     }
 })
+// page 6 begins here
