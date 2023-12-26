@@ -292,7 +292,6 @@ html, body {
     width: 35%;
     position: relative;
     z-index: 999;
-    cursor: pointer;
 }
 .skills-name{
     text-align: center;
@@ -301,6 +300,7 @@ html, body {
     color: white;
     background-color: black;
     font-family: game of squids;
+    cursor: pointer;
 }
 .p5-position{
     position: absolute;
@@ -353,7 +353,62 @@ html, body {
 
 
 
+/* page 6 begins here  */
+.p6-background{
+    background-color: black;
+}
+.page-6-content{
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+    color: white;
 
+}
+.page-6-content h1{
+    position: relative;
+    font-size: 5vw;
+}
+.contact-page a{
+    text-decoration: none;
+}
+.contact-page{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contact{
+    width: 25vw;
+    color: white;
+    padding: 2vw 0vw;
+    word-wrap: break-word;
+
+}
+.contact :nth-child(1){
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 7px;
+    font-size: 2vw;
+
+}
+.contact :nth-child(2){
+    color: gray;
+    font-size: 2vw;
+    font-family: sans-serif;
+}
+.collaborate{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 25px 10px;
+}
+.collaborate img{
+    height: 50px;
+    width: 50px;
+}
+.collaborate h2{
+    color: white;
+}
 @media (max-width: 900px) {
     .custom-cursor{
         display: none;
@@ -450,5 +505,26 @@ html, body {
     }
     .board-image li{
         font-size: 5vw;
+    }
+    .page-6-content h1{
+        font-size: 10vw;
+        padding: 5vw;
+    }
+    .contact-page{
+        margin-left: 4vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact :nth-child(1){
+        font-size: 4.5vw;
+
+    }
+    .contact :nth-child(2){
+        font-size: 4.3vw;
+
+    }
+    .contact{
+        width: 80vw;
+        padding: 4vw 0vw;    
     }
 }
