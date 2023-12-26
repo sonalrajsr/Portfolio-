@@ -277,7 +277,7 @@ gsap.from(".collaborate h2", {
     scrollTrigger : {
         trigger : ".collaborate h2",
         scroller : "body",
-        markers : true,
+        markers : false,
         start : "top 90%",
     },
     y : -35,
