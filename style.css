@@ -299,6 +299,13 @@ html, body {
     font-family: game of squids;
     cursor: pointer;
 }
+.skills-name:hover{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
 .p5-position{
     position: absolute;
     /* defined a class for adding position */
