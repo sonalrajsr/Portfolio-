@@ -226,3 +226,72 @@ document.querySelector("#skill4").addEventListener("click", () => {
     }
 })
 // page 6 begins here
+gsap.from(".page-5-content .text", {
+    scrollTrigger : {
+        trigger : ".page-5-content .text",
+        scroller : "body",
+        markers : false,
+        start : "top 70%",
+    },
+    y : 35,
+    duration : 1.2,
+    // ease: "",
+    opacity : 0
+})
+let skills_name = document.querySelectorAll(".skills-name")
+for (let i =0; i < skills_name.length ; i++ ){
+    gsap.from(skills_name[i], {
+        scrollTrigger : {
+            trigger : skills_name[i],
+            scroller : "body",
+            markers : false,
+            start : "top 70%",
+        },
+        x : -55,
+        duration : 1,
+        opacity : 0
+    })
+}
+// page 6 begains here
+gsap.from(".page-6-content h1", {
+    scrollTrigger : {
+        trigger : ".page-6-content h1",
+        scroller : "body",
+        markers : false,
+        start : "top 80%",
+    },
+    y : -35,
+    duration : 1.5
+})
+gsap.from(".contact h3", {
+    scrollTrigger : {
+        trigger : ".contact h3",
+        scroller : "body",
+        markers : false,
+        start : "top 90%",
+    },
+    y : 35,
+    duration : 1
+})
+gsap.from(".collaborate h2", {
+    scrollTrigger : {
+        trigger : ".collaborate h2",
+        scroller : "body",
+        markers : true,
+        start : "top 90%",
+    },
+    y : -35,
+    duration : 1.2,
+    // delay : 0.4,
+    opacity : 0
+})
+gsap.from(".collaborate img", {
+    scrollTrigger : {
+        trigger : ".collaborate",
+        scroller : "body",
+        markers : false,
+        start : "top 90%",
+    },
+    x : -35,
+    duration : 1.2
+})
