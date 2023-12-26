@@ -107,6 +107,8 @@ li{
     justify-content: flex-start;
     align-items: start;
     margin: 20px;
+ 
+
 }
 .bar-icon{
     display: none;
@@ -594,5 +596,17 @@ li{
     }
     .nav-options{
         display: none;
+    }
+}
+@media (max-width: 350px) {
+    .mob-nav{
+        height: 100vh;
+        width: 100%;
+    }
+    .mob-nav .nav-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
