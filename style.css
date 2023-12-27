@@ -72,6 +72,7 @@ li {
   margin-top: 10px;
 }
 .navigation img {
+    position: relative;
   height: 100%;
   width: 100%;
 }
