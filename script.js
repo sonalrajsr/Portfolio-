@@ -1,8 +1,23 @@
 // custom cursor
+let custom_mouse = document.querySelector(".custom-cursor");
 document.addEventListener("mousemove", function (dets) {
   gsap.to(".custom-cursor", {
     left: dets.x,
     top: dets.y,
+  });
+});
+// custom cursor funcality for nav bar
+var navOptions = document.querySelectorAll(".nav-options li");
+
+navOptions.forEach((navOpt) => {
+  navOpt.addEventListener("mouseover", () => {
+    document.querySelector(".custom-cursor").style.backgroundColor = 'white';
+    navOpt.style.color = 'black'
+  });
+
+  navOpt.addEventListener("mouseout", () => {
+    document.querySelector(".custom-cursor").style.backgroundColor = '#ebdd91';
+    navOpt.style.color = 'white'
   });
 });
 // page 1 js
@@ -289,8 +304,8 @@ gsap.from(".collaborate img", {
   x: -35,
   duration: 1.2,
 });
+// navigation bar 
 function sidenav() {
-  gsap.to;
   side_bar = document.querySelector(".mob-nav");
   side_bar.style.display = "block";
 }
