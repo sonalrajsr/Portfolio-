@@ -258,7 +258,7 @@ for (let i = 0; i < skills_name.length; i++) {
     scrollTrigger: {
       trigger: skills_name[i],
       scroller: "body",
-      markers: true,
+      markers: false,
       start: "top 79%",
       scrub : 2,
     },
