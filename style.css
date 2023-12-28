@@ -99,7 +99,7 @@ li {
   right: 0%;
   height: 100vh;
   width: 70%;
-  background-color: rgba(12, 12, 10, 0.65);
+  background-color: rgba(44, 44, 41, 0.65);
   backdrop-filter: blur(10px);
   box-shadow: -5px 0 10px gray;
 }
@@ -354,12 +354,7 @@ li {
   font-family: game of squids;
   cursor: pointer;
 }
-.skills-name:hover {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
+
 .p5-position {
   position: absolute;
   /* defined a class for adding position */

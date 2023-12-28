@@ -160,6 +160,8 @@ for (let i = 0; i < proj_title.length; i++) {
       scroller: "body",
       markers: false,
       start: "top 80%",
+      // scrub : true,
+
     },
     y: 30,
     duration: 1.2,
@@ -183,6 +185,7 @@ document.querySelector("#skill1").addEventListener("click", () => {
       opacity: 1,
       duration: 1,
     });
+    document.getElementById("skill1").style.borderRadius = "15px";
     document.querySelector(".tools").style.opacity = "0";
     document.querySelector(".libraries").style.opacity = "0";
     document.querySelector(".theories").style.opacity = "0";
@@ -199,6 +202,7 @@ document.querySelector("#skill2").addEventListener("click", () => {
       opacity: 1,
       duration: 1,
     });
+    document.getElementById("skill2").style.borderRadius = "15px";
     document.querySelector(".programming").style.opacity = "0";
     document.querySelector(".libraries").style.opacity = "0";
     document.querySelector(".theories").style.opacity = "0";
@@ -214,6 +218,7 @@ document.querySelector("#skill3").addEventListener("click", () => {
       opacity: 1,
       duration: 1,
     });
+    document.getElementById("skill3").style.borderRadius = "15px";
     document.querySelector(".programming").style.opacity = "0";
     document.querySelector(".tools").style.opacity = "0";
     document.querySelector(".theories").style.opacity = "0";
@@ -229,18 +234,18 @@ document.querySelector("#skill4").addEventListener("click", () => {
       opacity: 1,
       duration: 1,
     });
+    document.getElementById("skill4").style.borderRadius = "15px";
     document.querySelector(".programming").style.opacity = "0";
     document.querySelector(".libraries").style.opacity = "0";
     document.querySelector(".tools").style.opacity = "0";
   }
 });
-// page 6 begins here
 gsap.from(".page-5-content .text", {
   scrollTrigger: {
     trigger: ".page-5-content .text",
     scroller: "body",
     markers: false,
-    start: "top 70%",
+    start: "top 75%",
   },
   y: 35,
   duration: 1.2,
@@ -253,12 +258,13 @@ for (let i = 0; i < skills_name.length; i++) {
     scrollTrigger: {
       trigger: skills_name[i],
       scroller: "body",
-      markers: false,
-      start: "top 70%",
+      markers: true,
+      start: "top 79%",
+      scrub : 2,
     },
-    x: -55,
+    x: -75,
     duration: 1,
-    opacity: 0,
+    // opacity: 0,
   });
 }
 // page 6 begains here
