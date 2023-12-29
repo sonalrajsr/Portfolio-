@@ -11,6 +11,39 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+// text scroll animation
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.page-2-content h3')
+
+splitTypes.forEach((char,i) => {
+
+    const bg = char.dataset.bgColor
+    const fg = char.dataset.fgColor
+
+    const text = new SplitType(char, { types: 'chars'})
+
+    gsap.fromTo(text.chars, 
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: char,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
+            }
+    })
+})
+
+
 // custom cursor
 let custom_mouse = document.querySelector(".custom-cursor");
 document.addEventListener("mousemove", function (dets) {
@@ -57,9 +90,10 @@ gsap.from(".page-2-content h1", {
     markers: false,
     start: "top 70%",
   },
+  pin : true,
   y: -60,
   duration: 1.5,
-  opacity: 0,
+  // opacity: 0,
 });
 gsap.from(".page-2-content h3", {
   scrollTrigger: {
