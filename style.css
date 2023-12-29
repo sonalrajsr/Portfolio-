@@ -47,6 +47,9 @@ li {
   border-radius: 50%;
   position: fixed;
   transform: translate(-50%, -50%);
+  /* background-image: url(./assets/D.A.V\ Public\ School\ Sherghati\,\ Bihar.png); */
+  /* background-position: center; */
+  /* background-size: contain; */
 }
 .p1-background {
   background-color: black;

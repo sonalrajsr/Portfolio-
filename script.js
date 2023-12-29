@@ -1,3 +1,16 @@
+// smooth scroll lenis
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 // custom cursor
 let custom_mouse = document.querySelector(".custom-cursor");
 document.addEventListener("mousemove", function (dets) {
