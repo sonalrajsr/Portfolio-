@@ -1,126 +1,134 @@
 // smooth scroll lenis
-const lenis = new Lenis()
+const lenis = new Lenis();
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
 
 function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
+  lenis.raf(time);
+  requestAnimationFrame(raf);
 }
 
-requestAnimationFrame(raf)
+requestAnimationFrame(raf);
 // lander
 
 let time_line = gsap.timeline({
   // opacity: 0,
   // delay :1
-})
+});
 time_line
-        .from("#n25", {
-          opacity: 0,
-          onStart: function(){
-            $('#n25').textillate({
-              in: {
-                effect : 'fadeInUp',
-                callback: function(){
-                  $('#n25').textillate('out');
-                }
-              },
-              out: {effect: 'fadeOutUp'}
-            });
-          }
-        })
-        .from("#n50", {
-          opacity: 0,
-          delay :1,
-          onStart: function(){
-            $('#n50').textillate({
-              in: {
-                effect : 'fadeInUp',
-                callback: function(){
-                  $('#n50').textillate('out');
-                }
-              },
-              out: {effect: 'fadeOutUp'}
-            });
-          }
-        })
-        .from("#n75", {
-          opacity: 0,
-          delay :1,
-          onStart: function(){
-            $('#n75').textillate({
-              in: {
-                effect : 'fadeInUp',
-                callback: function(){
-                  $('#n75').textillate('out');
-                }
-              },
-              out: {effect: 'fadeOutUp'}
-            });
-          }
-        })
-        .from("#n100", {
-          opacity: 0,
-          delay :1,
-          onStart: function(){
-            $('#n100').textillate({
-              in: {
-                effect : 'fadeInUp',  
-              },
-            });
-          }
-        })
-        .to(".top-screen", {
-          top : "-100%",
-          delay: 1,
-          duration: 1.3,
-          ease: "power4.easeOut"
-        })
-        // page 1 js
-        .from(".page-1-content .text", {
-          y: -200,
-          duration: 1.7,
-          opacity: 0,
-        },'a')
-        .from(".page-1-content img", {
-          x: -150,
-          duration: 1.5,
-        },'a');
-        
-// text scroll animation
-gsap.registerPlugin(ScrollTrigger)
-
-const splitTypes = document.querySelectorAll('.page-2-content h3')
-
-splitTypes.forEach((char,i) => {
-
-    const bg = char.dataset.bgColor
-    const fg = char.dataset.fgColor
-
-    const text = new SplitType(char, { types: 'chars'})
-
-    gsap.fromTo(text.chars, 
-        {
-            color: bg,
+  .from("#n25", {
+    opacity: 0,
+    onStart: function () {
+      $("#n25").textillate({
+        in: {
+          effect: "fadeInUp",
+          callback: function () {
+            $("#n25").textillate("out");
+          },
         },
-        {
-            color: fg,
-            duration: 0.3,
-            stagger: 0.02,
-            scrollTrigger: {
-                trigger: char,
-                start: 'top 80%',
-                end: 'top 20%',
-                scrub: true,
-                markers: false,
-                toggleActions: 'play play reverse reverse'
-            }
-    })
-})
+        out: { effect: "fadeOutUp" },
+      });
+    },
+  })
+  .from("#n50", {
+    opacity: 0,
+    delay: 1,
+    onStart: function () {
+      $("#n50").textillate({
+        in: {
+          effect: "fadeInUp",
+          callback: function () {
+            $("#n50").textillate("out");
+          },
+        },
+        out: { effect: "fadeOutUp" },
+      });
+    },
+  })
+  .from("#n75", {
+    opacity: 0,
+    delay: 1,
+    onStart: function () {
+      $("#n75").textillate({
+        in: {
+          effect: "fadeInUp",
+          callback: function () {
+            $("#n75").textillate("out");
+          },
+        },
+        out: { effect: "fadeOutUp" },
+      });
+    },
+  })
+  .from("#n100", {
+    opacity: 0,
+    delay: 1,
+    onStart: function () {
+      $("#n100").textillate({
+        in: {
+          effect: "fadeInUp",
+        },
+      });
+    },
+  })
+  .to(".top-screen", {
+    top: "-100%",
+    delay: 1,
+    duration: 1.3,
+    ease: "power4.easeOut",
+  })
+  // page 1 js
+  .from(
+    ".page-1-content .text",
+    {
+      y: -200,
+      duration: 1.7,
+      opacity: 0,
+    },
+    "a"
+  )
+  .from(
+    ".page-1-content img",
+    {
+      x: -150,
+      duration: 1.5,
+    },
+    "a"
+  );
 
+// text scroll animation
+gsap.registerPlugin(ScrollTrigger);
+
+const splitTypes = document.querySelectorAll(".page-2-content h3");
+
+splitTypes.forEach((char, i) => {
+  const bg = char.dataset.bgColor;
+  const fg = char.dataset.fgColor;
+
+  const text = new SplitType(char, { types: "chars" });
+
+  gsap.fromTo(
+    text.chars,
+    {
+      color: bg,
+    },
+    {
+      color: fg,
+      duration: 0.3,
+      stagger: 0.02,
+      scrollTrigger: {
+        trigger: char,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play play reverse reverse",
+      },
+    }
+  );
+});
 
 // custom cursor
 let custom_mouse = document.querySelector(".custom-cursor");
@@ -135,16 +143,15 @@ var navOptions = document.querySelectorAll(".nav-options li");
 
 navOptions.forEach((navOpt) => {
   navOpt.addEventListener("mouseover", () => {
-    document.querySelector(".custom-cursor").style.backgroundColor = 'white';
-    navOpt.style.color = 'black'
+    document.querySelector(".custom-cursor").style.backgroundColor = "white";
+    navOpt.style.color = "black";
   });
 
   navOpt.addEventListener("mouseout", () => {
-    document.querySelector(".custom-cursor").style.backgroundColor = '#ebdd91';
-    navOpt.style.color = 'white'
+    document.querySelector(".custom-cursor").style.backgroundColor = "#ebdd91";
+    navOpt.style.color = "white";
   });
 });
-
 
 //  page 2 starts
 gsap.from(".page-2-content h1", {
@@ -154,7 +161,7 @@ gsap.from(".page-2-content h1", {
     markers: false,
     start: "top 80%",
   },
-  pin : true,
+  pin: true,
   y: -60,
   duration: 1.5,
   // opacity: 0,
@@ -272,7 +279,6 @@ for (let i = 0; i < proj_title.length; i++) {
       markers: false,
       start: "top 80%",
       // scrub : true,
-
     },
     y: 30,
     duration: 1.2,
@@ -371,7 +377,7 @@ for (let i = 0; i < skills_name.length; i++) {
       scroller: "body",
       markers: false,
       start: "top 79%",
-      scrub : 2,
+      scrub: 2,
     },
     x: -75,
     duration: 1,
@@ -421,7 +427,7 @@ gsap.from(".collaborate img", {
   x: -35,
   duration: 1.2,
 });
-// navigation bar 
+// navigation bar
 function sidenav() {
   side_bar = document.querySelector(".mob-nav");
   side_bar.style.display = "block";

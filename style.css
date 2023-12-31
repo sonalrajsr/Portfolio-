@@ -52,33 +52,38 @@ li {
   /* background-size: contain; */
 }
 /* loader */
-.top-screen{
+.top-screen {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
   position: absolute;
   z-index: 99;
-  background-color: #200459;
+  /* background-color: #200459; */
+  background-image: url(./assets/pre\ loader\ backgruobd.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.top-screen h2{
+.top-screen h2 {
+  margin-top: 90%;
   font-size: 7vw;
-  color: #01FFFF;
-  font-family: game of squids;
-
+  color: #E4FFA5;
+  font-family: sugarpie;
 }
-.counting{
+.counting {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0;
 }
-.counting h1{
+.counting h1 {
   font-size: 10vw;
   overflow: hidden;
-  color: #01FFFF;
+  color: #E4FFA5;
   font-family: game of squids;
+  /* margin-top: 40%; */
 }
 /* navigation */
 .navigation {
@@ -95,7 +100,7 @@ li {
   margin-top: 10px;
 }
 .navigation img {
-    position: relative;
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -606,30 +611,7 @@ li {
   .nav-options {
     display: none;
   }
-  /* loader */
-.top-screen{
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  z-index: 99;
-  background-color: #200459;
-}
-.top-screen h2{
-  height: 20%;
-  font-size: 13vw;
-  color: #01FFFF;
-  font-family: game of squids;
-
-}
-.counting{
-  height: 70%;
-  justify-content: space-between;
-  margin-top: 10%;
-}
-.counting h1{
-  font-size: 12vw;
-}
+  
 }
 @media (max-width: 350px) {
   .mob-nav {
@@ -641,5 +623,28 @@ li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+  /* loader */
+  .top-screen {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    /* background-color: #200459; */
+  }
+  .top-screen h2 {
+    height: 20%;
+    font-size: 13vw;
+    color: #01ffff;
+    font-family: game of squids;
+  }
+  .counting {
+    height: 70%;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  .counting h1 {
+    font-size: 12vw;
   }
 }
