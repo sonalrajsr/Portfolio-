@@ -11,7 +11,85 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+// lander
 
+let time_line = gsap.timeline({
+  // opacity: 0,
+  // delay :1
+})
+time_line
+        .from("#n25", {
+          opacity: 0,
+          onStart: function(){
+            $('#n25').textillate({
+              in: {
+                effect : 'fadeInUp',
+                callback: function(){
+                  $('#n25').textillate('out');
+                }
+              },
+              out: {effect: 'fadeOutUp'}
+            });
+          }
+        })
+        .from("#n50", {
+          opacity: 0,
+          delay :1,
+          onStart: function(){
+            $('#n50').textillate({
+              in: {
+                effect : 'fadeInUp',
+                callback: function(){
+                  $('#n50').textillate('out');
+                }
+              },
+              out: {effect: 'fadeOutUp'}
+            });
+          }
+        })
+        .from("#n75", {
+          opacity: 0,
+          delay :1,
+          onStart: function(){
+            $('#n75').textillate({
+              in: {
+                effect : 'fadeInUp',
+                callback: function(){
+                  $('#n75').textillate('out');
+                }
+              },
+              out: {effect: 'fadeOutUp'}
+            });
+          }
+        })
+        .from("#n100", {
+          opacity: 0,
+          delay :1,
+          onStart: function(){
+            $('#n100').textillate({
+              in: {
+                effect : 'fadeInUp',  
+              },
+            });
+          }
+        })
+        .to(".top-screen", {
+          top : "-100%",
+          delay: 1,
+          duration: 1.3,
+          ease: "power4.easeOut"
+        })
+        // page 1 js
+        .from(".page-1-content .text", {
+          y: -200,
+          duration: 1.7,
+          opacity: 0,
+        },'a')
+        .from(".page-1-content img", {
+          x: -150,
+          duration: 1.5,
+        },'a');
+        
 // text scroll animation
 gsap.registerPlugin(ScrollTrigger)
 
@@ -66,21 +144,7 @@ navOptions.forEach((navOpt) => {
     navOpt.style.color = 'white'
   });
 });
-// page 1 js
-let text_page1 = document.querySelector(".page-1-content .text");
-let image_page1 = document.querySelector(".page-1-content img");
 
-gsap.from(text_page1, {
-  delay: 0.5,
-  y: -200,
-  duration: 1.7,
-  opacity: 0,
-});
-gsap.from(image_page1, {
-  delay: 0.5,
-  x: -150,
-  duration: 1.5,
-});
 
 //  page 2 starts
 gsap.from(".page-2-content h1", {
@@ -88,7 +152,7 @@ gsap.from(".page-2-content h1", {
     trigger: ".page-2-content h1",
     scroller: "body",
     markers: false,
-    start: "top 70%",
+    start: "top 80%",
   },
   pin : true,
   y: -60,
