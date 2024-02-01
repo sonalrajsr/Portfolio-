@@ -11,12 +11,9 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-// lander
 
-let time_line = gsap.timeline({
-  // opacity: 0,
-  // delay :1
-});
+// pre loader
+let time_line = gsap.timeline();
 time_line
   .from("#n25", {
     opacity: 0,
@@ -98,37 +95,7 @@ time_line
     "a"
   );
 
-// text scroll animation
-gsap.registerPlugin(ScrollTrigger);
 
-const splitTypes = document.querySelectorAll(".page-2-content h3");
-
-splitTypes.forEach((char, i) => {
-  const bg = char.dataset.bgColor;
-  const fg = char.dataset.fgColor;
-
-  const text = new SplitType(char, { types: "chars" });
-
-  gsap.fromTo(
-    text.chars,
-    {
-      color: bg,
-    },
-    {
-      color: fg,
-      duration: 0.3,
-      stagger: 0.02,
-      scrollTrigger: {
-        trigger: char,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play play reverse reverse",
-      },
-    }
-  );
-});
 
 // custom cursor
 let custom_mouse = document.querySelector(".custom-cursor");
@@ -199,6 +166,38 @@ gsap.from(".page-2-content-common img", {
   duration: 1.5,
   opacity: 0,
 });
+// text scroll animation
+gsap.registerPlugin(ScrollTrigger);
+
+const splitTypes = document.querySelectorAll(".page-2-content h3");
+
+splitTypes.forEach((char, i) => {
+  const bg = char.dataset.bgColor;
+  const fg = char.dataset.fgColor;
+
+  const text = new SplitType(char, { types: "chars" });
+
+  gsap.fromTo(
+    text.chars,
+    {
+      color: bg,
+    },
+    {
+      color: fg,
+      duration: 0.3,
+      stagger: 0.02,
+      scrollTrigger: {
+        trigger: char,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: true,
+        markers: false,
+        toggleActions: "play play reverse reverse",
+      },
+    }
+  );
+});
+
 
 // Educational page starts here
 let edu_text = document.querySelectorAll(".edu-text");

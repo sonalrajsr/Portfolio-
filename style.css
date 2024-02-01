@@ -130,6 +130,7 @@ li {
   background-color: rgba(44, 44, 41, 0.65);
   backdrop-filter: blur(10px);
   box-shadow: -5px 0 10px gray;
+  
 }
 .mob-nav .nav-options {
   display: flex;
@@ -392,7 +393,6 @@ li {
   font-family: game of squids;
   cursor: pointer;
 }
-
 .p5-position {
   position: absolute;
   /* defined a class for adding position */
