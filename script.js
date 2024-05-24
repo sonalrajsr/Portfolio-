@@ -157,46 +157,46 @@ gsap.from(".line", {
 });
 gsap.from(".page-2-content-common img", {
   scrollTrigger: {
-    trigger: ".line",
+    trigger: ".page-2-content-common img",
     scroller: "body",
-    markers: false,
-    start: "top 100%",
+    markers: true,
+    start: "top 60%",
   },
   x: -100,
   duration: 1.5,
   opacity: 0,
 });
 // text scroll animation
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-const splitTypes = document.querySelectorAll(".page-2-content h3");
+// const splitTypes = document.querySelectorAll(".page-2-content h3");
 
-splitTypes.forEach((char, i) => {
-  const bg = char.dataset.bgColor;
-  const fg = char.dataset.fgColor;
+// splitTypes.forEach((char, i) => {
+//   const bg = char.dataset.bgColor;
+//   const fg = char.dataset.fgColor;
 
-  const text = new SplitType(char, { types: "chars" });
+//   const text = new SplitType(char, { types: "chars" });
 
-  gsap.fromTo(
-    text.chars,
-    {
-      color: bg,
-    },
-    {
-      color: fg,
-      duration: 0.3,
-      stagger: 0.02,
-      scrollTrigger: {
-        trigger: char,
-        start: "top 80%",
-        end: "top 20%",
-        scrub: true,
-        markers: false,
-        toggleActions: "play play reverse reverse",
-      },
-    }
-  );
-});
+//   gsap.fromTo(
+//     text.chars,
+//     {
+//       color: bg,
+//     },
+//     {
+//       color: fg,
+//       duration: 0.3,
+//       stagger: 0.02,
+//       scrollTrigger: {
+//         trigger: char,
+//         start: "top 80%",
+//         end: "top 20%",
+//         scrub: true,
+//         markers: false,
+//         toggleActions: "play play reverse reverse",
+//       },
+//     }
+//   );
+// });
 
 
 // Educational page starts here
