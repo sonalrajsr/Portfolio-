@@ -159,7 +159,7 @@ gsap.from(".page-2-content-common img", {
   scrollTrigger: {
     trigger: ".page-2-content-common img",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 60%",
   },
   x: -100,
