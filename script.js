@@ -95,7 +95,17 @@ time_line
     "a"
   );
 
+// Code for downlod resume
+const button = document.getElementById('profileButton');
 
+    // Add event listeners for mouseover and mouseout events
+    button.addEventListener('mouseover', () => {
+      button.textContent = 'Download Resume';
+    });
+
+    button.addEventListener('mouseout', () => {
+      button.textContent = 'Sonal Raj / Engineer';
+    });
 
 // custom cursor
 let custom_mouse = document.querySelector(".custom-cursor");
@@ -435,3 +445,5 @@ function endnav() {
   collapse_nav = document.querySelector(".mob-nav");
   side_bar.style.display = "none";
 }
+
+
