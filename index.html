@@ -1,497 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="assets/fav2.png" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonal Raj</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- custom cursor code -->
-    <div class="custom-cursor"></div>
-    <!-- code for loader -->
-    <div class="top-screen">
-      <div class="top-name">
-        <!-- <h2>Sonal's <br />Portfolio</h2> -->
-      </div>
-      <div class="counting">
-        <h1 id="n100">100</h1>
-        <h1 id="n75">75</h1>
-        <h1 id="n50">50</h1>
-        <h1 id="n25">25</h1>
-      </div>
-    </div>
-    <!-- page 1 begins here -->
-    <div class="p1-background">
-      <div class="main">
-        <div class="navigation">
-          <div class="logo">
-            <img src="./assets/fav2.png" alt="" />
-          </div>
-          <div class="nav-options">
-            <a href="#p2"><li>About</li></a>
-            <a href="#p3"><li>Education</li></a>
-            <a href="#p4"><li>Projects</li></a>
-            <a href="#p5"><li>Skills</li></a>
-            <a href="#p6"><li>Contacts</li></a>
-          </div>
-          <div class="bar-icon">
-            <img onclick="sidenav()" src="./assets/bar.png" alt="bar-icon" />
-          </div>
-        </div>
-        <div class="page-1-content">
-          <div class="text page-1-content-common">
-            <h1>
-              "Step into the <br />vibrant world <br />of my <br />portfolio!"
-            </h1>
-            <a href="./assets/Resume_all.pdf" download>
-              <button id="profileButton">Sonal Raj / Engineer</button>
-            </a>
-          </div>
-          <div class="page-1-content-common" id="dfs">
-            <img src="./assets/1.png" alt="sonal image" />
-          </div>
-        </div>
-      </div>
-      <!-- navigation bar -->
-      <div class="mob-nav">
-        <div class="nav-options">
-          <img onclick="endnav()" src="./assets/cross.png" alt="" />
-          <a href="#p2"><li>About</li></a>
-          <a href="#p3"><li>Education</li></a>
-          <a href="#p4"><li>Projects</li></a>
-          <a href="#p5"><li>Skills</li></a>
-          <a href="#p6"><li>Contacts</li></a>
-        </div>
-      </div>
-    </div>
-    <!-- page 2 begins here -->
-    <div class="p2-background">
-      <div class="main">
-        <div class="page-2-content" id="p2">
-          <div class="text page-2-content-common">
-            <h1>About Me</h1>
-            <h3 data-bg-color="#cccccc" data-fg-color="#764b36">
-              I am a passionate and dedicated engineering expert with a strong grasp of technical principles and creativity. Excelling in dynamic environments, I consistently deliver outstanding results through hard work and commitment to excellence. Whether collaborating in teams or tackling projects independently, I strive to exceed expectations and contribute to success. Ready to bring my expertise and enthusiasm to any challenge, I drive innovation in engineering</h3>
-              </h3>
-            <div class="line">
-              <!-- under line element -->
-            </div>
-          </div>
-          <div class="page-2-content-common">
-            <img
-              src="./assets/photo_2023-12-19_06-39-20.jpg"
-              alt="sonal 2nd image"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- page 3 begins here -->
-    <div class="p3-background">
-      <div class="main">
-        <div class="page-3-content" id="p3">
-          <div class="text">
-            <h1>My Educational Journey</h1>
-          </div>
-          <div class="education">
-            <div class="edu-cards">
-              <div class="edu-text" id="edu-1">
-                <img src="./assets/2.png" alt="class 10 image" />
-                <h2>Matriculation</h2>
-                <h3>D.A.V Public School</h3>
-                <h3>Sherghati, Bihar</h3>
-              </div>
-              <div class="text-hover" id="text-hover-1">
-                <li style="margin-top: 40px">Science</li>
-                <li>Mathematics</li>
-                <li>Social Science</li>
-                <li>Sanskrit</li>
-                <li>English</li>
-                <li>Hindi</li>
-              </div>
-            </div>
-            <div class="edu-cards">
-              <div class="edu-text" id="edu-2">
-                <img src="./assets/3.png" alt="class 10 image" />
-                <h2>Intermediatie</h2>
-                <h3>S.M.S.G College</h3>
-                <h3>Sherghati, Bihar</h3>
-              </div>
-              <div class="text-hover" id="text-hover-2">
-                <li style="margin-top: 40px">Physics</li>
-                <li>Chemisty</li>
-                <li>Mathematics</li>
-                <li>English</li>
-                <li>Hindi</li>
-              </div>
-            </div>
-            <div class="edu-cards">
-              <div class="edu-text" id="edu-3">
-                <img src="./assets/4.png" alt="class 10 image" />
-                <h2>Graduation</h2>
-                <h3>Indian Institue of Technology</h3>
-                <h3>Jodhpur, Rajasthan</h3>
-              </div>
-              <div class="text-hover" id="text-hover-3">
-                <li style="margin-top: 40px; color: rgb(238, 155, 46)">
-                  First Semester
-                </li>
-                <li>Mathematics I</li>
-                <li>Introduction to Electrical Engineering</li>
-                <li>Introduction to Computer Science</li>
-                <li>Introduction to Bioengineering Theory</li>
 
-                <li style="margin-top: 40px; color: rgb(238, 155, 46)">
-                  Second Semester
-                </li>
-                <li>Chemistry</li>
-                <li>Electromagnetism and Optics</li>
-                <li>Engineering Realization</li>
-                <li>Engineering Mechanics</li>
-                <li>Mathematics II</li>
-                <li style="margin-top: 40px; color: rgb(238, 155, 46)">
-                  Third Semester
-                </li>
-                <li>Introduction to Machine Learning</li>
-                <li>Scientific Computations</li>
-                <li>Mechanics of Solids</li>
-                <li>Thermodynamics</li>
-                <li>Metrology</li>
-                <li>Statistical Mechanics</li>
-                <li style="margin-top: 40px; color: rgb(238, 155, 46)">
-                  Fourth Semester
-                </li>
-                <li>Data Structures and Algorithms</li>
-                <li>Fluid Mechanics</li>
-                <li>Fluid Mechanics Lab</li>
-                <li>Manufacturing Processes</li>
-                <li>Signals and Systems</li>
-                <li>Structure of Materials</li>
-                <li>Materials Selection</li>
-                <li>Physical Metallurgy</li>
-                <li>Short Fiction from India</li>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="assets/fav2.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonal Raj</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- custom cursor code -->
+  <div class="custom-cursor"></div>
+  <!-- code for loader -->
+  <div class="top-screen">
+    <div class="top-name">
+      <!-- <h2>Sonal's <br />Portfolio</h2> -->
+    </div>
+    <div class="counting">
+      <h1 id="n100">100</h1>
+      <h1 id="n75">75</h1>
+      <h1 id="n50">50</h1>
+      <h1 id="n25">25</h1>
+    </div>
+  </div>
+  <!-- page 1 begins here -->
+  <div class="p1-background">
+    <div class="main">
+      <div class="navigation">
+        <div class="logo">
+          <img src="./assets/fav2.png" alt="" />
+        </div>
+        <div class="nav-options">
+          <a href="#p2">
+            <li>About</li>
+          </a>
+          <a href="#p3">
+            <li>Education</li>
+          </a>
+          <a href="#p4">
+            <li>Projects</li>
+          </a>
+          <a href="#p5">
+            <li>Skills</li>
+          </a>
+          <a href="#p6">
+            <li>Contacts</li>
+          </a>
+        </div>
+        <div class="bar-icon">
+          <img onclick="sidenav()" src="./assets/bar.png" alt="bar-icon" />
+        </div>
+      </div>
+      <div class="page-1-content">
+        <div class="text page-1-content-common">
+          <h1>
+            "Step into the <br />vibrant world <br />of my <br />portfolio!"
+          </h1>
+          <a href="./assets/Resume_all.pdf" download>
+            <button id="profileButton">Sonal Raj / Engineer</button>
+          </a>
+        </div>
+        <div class="page-1-content-common" id="dfs">
+          <img src="./assets/1.png" alt="sonal image" />
+        </div>
+      </div>
+    </div>
+    <!-- navigation bar -->
+    <div class="mob-nav">
+      <div class="nav-options">
+        <img onclick="endnav()" src="./assets/cross.png" alt="" />
+        <a href="#p2">
+          <li>About</li>
+        </a>
+        <a href="#p3">
+          <li>Education</li>
+        </a>
+        <a href="#p4">
+          <li>Projects</li>
+        </a>
+        <a href="#p5">
+          <li>Skills</li>
+        </a>
+        <a href="#p6">
+          <li>Contacts</li>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- page 2 begins here -->
+  <div class="p2-background">
+    <div class="main">
+      <div class="page-2-content" id="p2">
+        <div class="text page-2-content-common">
+          <h1>About Me</h1>
+          <h3 data-bg-color="#cccccc" data-fg-color="#764b36">
+            I am a passionate and dedicated engineering expert with a strong grasp of technical principles and
+            creativity. Excelling in dynamic environments, I consistently deliver outstanding results through hard work
+            and commitment to excellence. Whether collaborating in teams or tackling projects independently, I strive to
+            exceed expectations and contribute to success. Ready to bring my expertise and enthusiasm to any challenge,
+            I drive innovation in engineering</h3>
+          </h3>
+          <div class="line">
+            <!-- under line element -->
+          </div>
+        </div>
+        <div class="page-2-content-common">
+          <img src="./assets/photo_2023-12-19_06-39-20.jpg" alt="sonal 2nd image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- page 3 begins here -->
+  <div class="p3-background">
+    <div class="main">
+      <div class="page-3-content" id="p3">
+        <div class="text">
+          <h1>My Educational Journey</h1>
+        </div>
+        <div class="education">
+          <div class="edu-cards">
+            <div class="edu-text" id="edu-1">
+              <img src="./assets/2.png" alt="class 10 image" />
+              <h2>Matriculation</h2>
+              <h3>D.A.V Public School</h3>
+              <h3>Sherghati, Bihar</h3>
+            </div>
+            <div class="text-hover" id="text-hover-1">
+              <li style="margin-top: 40px">Science</li>
+              <li>Mathematics</li>
+              <li>Social Science</li>
+              <li>Sanskrit</li>
+              <li>English</li>
+              <li>Hindi</li>
+            </div>
+          </div>
+          <div class="edu-cards">
+            <div class="edu-text" id="edu-2">
+              <img src="./assets/3.png" alt="class 10 image" />
+              <h2>Intermediatie</h2>
+              <h3>S.M.S.G College</h3>
+              <h3>Sherghati, Bihar</h3>
+            </div>
+            <div class="text-hover" id="text-hover-2">
+              <li style="margin-top: 40px">Physics</li>
+              <li>Chemisty</li>
+              <li>Mathematics</li>
+              <li>English</li>
+              <li>Hindi</li>
+            </div>
+          </div>
+          <div class="edu-cards">
+            <div class="edu-text" id="edu-3">
+              <img src="./assets/4.png" alt="class 10 image" />
+              <h2>Graduation</h2>
+              <h3>Indian Institue of Technology</h3>
+              <h3>Jodhpur, Rajasthan</h3>
+            </div>
+            <div class="text-hover" id="text-hover-3">
+              <li style="margin-top: 40px; color: rgb(238, 155, 46)">
+                First Semester
+              </li>
+              <li>Mathematics I</li>
+              <li>Introduction to Electrical Engineering</li>
+              <li>Introduction to Computer Science</li>
+              <li>Introduction to Bioengineering Theory</li>
+
+              <li style="margin-top: 40px; color: rgb(238, 155, 46)">
+                Second Semester
+              </li>
+              <li>Chemistry</li>
+              <li>Electromagnetism and Optics</li>
+              <li>Engineering Realization</li>
+              <li>Engineering Mechanics</li>
+              <li>Mathematics II</li>
+              <li style="margin-top: 40px; color: rgb(238, 155, 46)">
+                Third Semester
+              </li>
+              <li>Introduction to Machine Learning</li>
+              <li>Scientific Computations</li>
+              <li>Mechanics of Solids</li>
+              <li>Thermodynamics</li>
+              <li>Metrology</li>
+              <li>Statistical Mechanics</li>
+              <li style="margin-top: 40px; color: rgb(238, 155, 46)">
+                Fourth Semester
+              </li>
+              <li>Data Structures and Algorithms</li>
+              <li>Fluid Mechanics</li>
+              <li>Fluid Mechanics Lab</li>
+              <li>Manufacturing Processes</li>
+              <li>Signals and Systems</li>
+              <li>Structure of Materials</li>
+              <li>Materials Selection</li>
+              <li>Physical Metallurgy</li>
+              <li>Short Fiction from India</li>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- page 4 begins here -->
-    <div class="p4-background">
-      <div class="main">
-        <div class="page-4-content" id="p4">
-          <div class="text">
-            <h1>Projects</h1>
+  </div>
+  <!-- page 4 begins here -->
+  <div class="p4-background">
+    <div class="main">
+      <div class="page-4-content" id="p4">
+        <div class="text">
+          <h1>Projects</h1>
+        </div>
+      </div>
+      <div class="projects"></div>
+      <div class="proj-title">
+        <a target="_blank" href="https://github.com/sonalrajsr/sonal-wasserstoff-AiInternTask">
+          <h2>Pipeline for Image Segmentation and Object Analysis</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/sonal-wasserstoff-AiInternTask"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          Developed a comprehensive image processing pipeline using
+          Streamlit that handles object segmentation, extraction, identification,
+          and text extraction. The pipeline generates annotated images and
+          provides outputs in JSON and summary tables. The project features
+          an intuitive UI for seamless navigation, with optimized image display
+          and annotation.
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a target="_blank" href="https://github.com/sonalrajsr/Data-Driven-Fluid-Mechanics-Project">
+          <h2>Data-Driven-Fluid-Mechanics-Project</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/Data-Driven-Fluid-Mechanics-Project"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          This project introduces a fluid dynamics image processing framework, using Proper Orthogonal
+          Decomposition (POD) and noise simulation techniques to analyze video data, providing a robust
+          toolkit for understanding fluid flow behavior. </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a target="_blank" href="https://iota03.github.io/ShearForceBendingMoment_/">
+          <h2>SFD & BMD plotting website</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/ioTa03/ShearForceBendingMoment_"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          The project developed a dynamic website for analyzing material strength using Bending Moment and
+          Shear Force diagrams. Utilizing HTML, CSS, JavaScript, and Chart.js, it showcased technical
+          proficiency, teamwork, and problem-solving skills.
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a target="_blank" href="https://github.com/DSA-IITJ-2024/ideathon-code-submission-sonalrajsr">
+          <h2>S.P.A.R.K.- Automatic Minesweeper Solver</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/DSA-IITJ-2024/ideathon-code-submission-sonalrajsr"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          A dynamic user interface was used along with an unusual method to develop an innovative
+          Minesweeper mine probability suggester that displays the probability of a mine as a percentage of
+          neighboring unopened cells and provides continuous feedback
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a href="https://image-captioning-website.streamlit.app/" target="_blank">
+          <h2>DeepCaption- Image Captioning System</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/Image-captioning-Website"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          Developed an image captioning system using VGG16 and LSTM deep
+          learning models, trained on the Flickr8K dataset. Implemented
+          preprocessing of images, tokenization of captions, demonstrating
+          expertise in computer vision and natural language processing.
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a href="https://github.com/sonalrajsr/student_management_program.git" target="_blank">
+          <h2>Student management program</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/student_management_program.git"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          A simple yet effective student list management system. This project allows for the storage and
+          management of basic student data, including name, email, roll number, and department. Key features
+          of the system include: <br>
+          <li>User authentication with login, logout, and registration functionality</li>
+          <li>Full CRUD (Create, Read, Update, Delete) operations for student data</li>
+          <li>Role-based permissions, ensuring that only admins can delete student information</li>
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a href="https://github.com/sonalrajsr/Ecommerce" target="_blank">
+          <h2>E-commerce Web Application</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/Ecommerce"><img src="./assets/github logo.png"
+              alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          This is a comprehensive e-commerce web application built with Django. The application provides a seamless
+          shopping experience for users, featuring a dynamic product catalog, user authentication, cart functionality,
+          secure checkout, and order tracking. The project aims to offer a scalable and secure platform for online
+          shopping.
+
+          <li>User Registration and Authentication</li>
+          <li>Dynamic Product Catalog</li>
+          <li>Shopping Cart and Checkout System</li>
+          <li>Order Management and Tracking</li>
+          <li>Admin Interface for Managing Products, Orders, and Users</li>
+
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a href="https://github.com/sonalrajsr/Age-Gender_Prediction.git" target="_blank">
+          <h2>Real Time Gender and Age Prediction</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/Age-Gender_Prediction.git"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          Developed an image gender and age prediction web app using Flask.
+          Utilized a TensorFlow deep learning model for accurate predictions.
+          Implemented image upload, preprocessing, and dynamic result
+          display features.
+        </h3>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="proj-title">
+        <a href="https://github.com/sonalrajsr/Covid-19-face-mask-detection" target="_blank">
+          <h2> Covid-19 Face Mask Detection System</h2>
+        </a>
+        <div class="github">
+          <a target="_blank" href="https://github.com/sonalrajsr/Covid-19-face-mask-detection"><img
+              src="./assets/github logo.png" alt="Git Hub logo" /></a>
+        </div>
+      </div>
+      <div class="proj-disc">
+        <h3>
+          The project uses a machine learning application to detect face mask wear using a convolutional
+          neural network, aiming to monitor and ensure compliance with mask-wearing guidelines during the
+          Covid-19 pandemic.
+        </h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- page 5 begins here -->
+  <div class="p5-background">
+    <div class="main">
+      <div class="page-5-content" id="p5">
+        <div class="text">
+          <h1>Skills That I Own</h1>
+        </div>
+      </div>
+      <div class="skills-topics">
+        <div class="skill-box">
+          <div class="skills-name" id="skill1">
+            <h2>Programming Language</h2>
+          </div>
+          <div class="skills-name" id="skill2">
+            <h2>Software</h2>
+
+          </div>
+          <div class="skills-name" id="skill3">
+            <h2>Libraries</h2>
+          </div>
+          <div class="skills-name" id="skill4">
+            <h2>Utilities</h2>
           </div>
         </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a
-              target="_blank"
-              href="https://github.com/sonalrajsr/Data-Driven-Fluid-Mechanics-Project"
-              ><h2>Data-Driven-Fluid-Mechanics-Project</h2></a
-            >
-            <div class="github">
-              <a
-                target="_blank"
-                href="https://github.com/sonalrajsr/Data-Driven-Fluid-Mechanics-Project"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
+        <div class="board-image">
+          <img src="./assets/board.png" alt="board image" />
+          <div class="board-text">
+            <div class="programming p5-position">
+              <li>C / C++</li>
+              <li>Pyhton</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Java Script</li>
             </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              This project introduces a fluid dynamics image processing framework, using Proper Orthogonal
- Decomposition (POD) and noise simulation techniques to analyze video data, providing a robust
- toolkit for understanding fluid flow behavior. </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a
-              target="_blank"
-              href="https://iota03.github.io/ShearForceBendingMoment_/"
-              ><h2>SFD & BMD plotting website</h2></a
-            >
-            <div class="github">
-              <a
-                target="_blank"
-                href="https://github.com/ioTa03/ShearForceBendingMoment_"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
+            <div class="tools p5-position">
+              <li>Latex</li>
+              <li>SolidWorks</li>
+              <li>OnShape</li>
+              <!-- <li>Javfafsa</li> -->
             </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              The project developed a dynamic website for analyzing material strength using Bending Moment and
-              Shear Force diagrams. Utilizing HTML, CSS, JavaScript, and Chart.js, it showcased technical
-              proficiency, teamwork, and problem-solving skills. 
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a target="_blank" href="https://github.com/DSA-IITJ-2024/ideathon-code-submission-sonalrajsr"><h2>S.P.A.R.K.- Automatic Minesweeper Solver</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/DSA-IITJ-2024/ideathon-code-submission-sonalrajsr"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
+            <div class="libraries p5-position">
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>SkLearn</li>
+              <li>OpenCV</li>
+              <li>TensorFlow</li>
             </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-            A dynamic user interface was used along with an unusual method to develop an innovative
- Minesweeper mine probability suggester that displays the probability of a mine as a percentage of
- neighboring unopened cells and provides continuous feedback
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a href="https://image-captioning-website.streamlit.app/" target="_blank"><h2>DeepCaption- Image Captioning System</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/sonalrajsr/Image-captioning-Website"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
+            <div class="theories p5-position">
+              <li>Git/GitHub</li>
+              <li>jupyter</li>
+              <li>Colab</li>
+              <!-- <li>Jefwefava</li> -->
             </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              Developed an image captioning system using VGG16 and LSTM deep
-learning models, trained on the Flickr8K dataset. Implemented
-preprocessing of images, tokenization of captions, demonstrating
-expertise in computer vision and natural language processing.
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a href="https://github.com/sonalrajsr/student_management_program.git" target="_blank"><h2>Student management program</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/sonalrajsr/student_management_program.git"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
-            </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              A simple yet effective student list management system. This project allows for the storage and
-              management of basic student data, including name, email, roll number, and department. Key features
-              of the system include: <br>
-              <li>User authentication with login, logout, and registration functionality</li>
-              <li>Full CRUD (Create, Read, Update, Delete) operations for student data</li>
-              <li>Role-based permissions, ensuring that only admins can delete student information</li>
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a href="https://github.com/sonalrajsr/Ecommerce" target="_blank"><h2>E-commerce Web Application</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/sonalrajsr/Ecommerce"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
-            </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              This is a comprehensive e-commerce web application built with Django. The application provides a seamless shopping experience for users, featuring a dynamic product catalog, user authentication, cart functionality, secure checkout, and order tracking. The project aims to offer a scalable and secure platform for online shopping. 
-              
-                <li>User Registration and Authentication</li>
-                <li>Dynamic Product Catalog</li>
-                <li>Shopping Cart and Checkout System</li>
-                <li>Order Management and Tracking</li>
-                <li>Admin Interface for Managing Products, Orders, and Users</li>
-              
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a href="https://github.com/sonalrajsr/Age-Gender_Prediction.git" target="_blank"><h2>Real Time Gender and Age Prediction</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/sonalrajsr/Age-Gender_Prediction.git"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
-            </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              Developed an image gender and age prediction web app using Flask.
-              Utilized a TensorFlow deep learning model for accurate predictions.
-              Implemented image upload, preprocessing, and dynamic result
-              display features.
-            </h3>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="proj-title">
-            <a href="https://github.com/sonalrajsr/Covid-19-face-mask-detection" target="_blank"><h2> Covid-19 Face Mask Detection System</h2></a>
-            <div class="github">
-              <a target="_blank" href="https://github.com/sonalrajsr/Covid-19-face-mask-detection"
-                ><img src="./assets/github logo.png" alt="Git Hub logo"
-              /></a>
-            </div>
-          </div>
-          <div class="proj-disc">
-            <h3>
-              The project uses a machine learning application to detect face mask wear using a convolutional
-              neural network, aiming to monitor and ensure compliance with mask-wearing guidelines during the
-              Covid-19 pandemic. 
-            </h3>
           </div>
         </div>
       </div>
     </div>
-    <!-- page 5 begins here -->
-    <div class="p5-background">
-      <div class="main">
-        <div class="page-5-content" id="p5">
-          <div class="text">
-            <h1>Skills That I Own</h1>
-          </div>
-        </div>
-        <div class="skills-topics">
-          <div class="skill-box">
-            <div class="skills-name" id="skill1">
-              <h2>Programming Language</h2>
-            </div>
-            <div class="skills-name" id="skill2">
-              <h2>Software</h2>
-            </div>
-            <div class="skills-name" id="skill3">
-              <h2>Libraries</h2>
-            </div>
-            <div class="skills-name" id="skill4">
-              <h2>Utilities</h2>
-            </div>
-          </div>
-          <div class="board-image">
-            <img src="./assets/board.png" alt="board image" />
-            <div class="board-text">
-              <div class="programming p5-position">
-                <li>C / C++</li>
-                <li>Pyhton</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Script</li>
-              </div>
-              <div class="tools p5-position">
-                <li>Latex</li>
-                <li>SolidWorks</li>
-                <li>OnShape</li>
-                <!-- <li>Javfafsa</li> -->
-              </div>
-              <div class="libraries p5-position">
-                <li>NumPy</li>
-                <li>Pandas</li>
-                <li>SkLearn</li>
-                <li>OpenCV</li>
-                <li>TensorFlow</li>
-              </div>
-              <div class="theories p5-position">
-                <li>Git/GitHub</li>
-                <li>jupyter</li>
-                <li>Colab</li>
-                <!-- <li>Jefwefava</li> -->
-              </div>
-            </div>
-          </div>
+  </div>
+  <!-- page 6 begins here -->
+  <div class="p6-background">
+    <div class="main">
+      <div class="page-6-content" id="p6">
+        <div class="text">
+          <h1>Reach Out <br />to Me</h1>
         </div>
       </div>
-    </div>
-    <!-- page 6 begins here -->
-    <div class="p6-background">
-      <div class="main">
-        <div class="page-6-content" id="p6">
-          <div class="text">
-            <h1>Reach Out <br />to Me</h1>
-          </div>
+      <div class="contact-page">
+        <div class="contact">
+          <a href="mailto:sonalraj0852@gmail.com">
+            <h3>Email</h3>
+          </a>
+          <a href="mailto:sonalraj0852@gmail.com">sonalraj0852@gmail.com</a>
         </div>
-        <div class="contact-page">
-          <div class="contact">
-            <a href="mailto:sonalraj0852@gmail.com"><h3>Email</h3></a>
-            <a href="mailto:sonalraj0852@gmail.com">sonalraj0852@gmail.com</a>
-          </div>
-          <div class="contact">
-            <a href="https://www.linkedin.com/in/sonalrajsr/"
-              ><h3>Linkdin</h3></a
-            >
-            <a href="https://www.linkedin.com/in/sonalrajsr/"
-              >https://www.linkedin.com/in/sonalrajsr/</a
-            >
-          </div>
-          <div class="contact">
-            <a href="https://twitter.com/sonalrajsr"><h3>X</h3></a>
-            <a href="https://twitter.com/sonalrajsr"
-              >https://twitter.com/sonalrajsr</a
-            >
-          </div>
-          <div class="contact">
-            <a href="https://www.instagram.com/sonalraj.sr/"
-              ><h3>instagram</h3></a
-            >
-            <a href="https://www.instagram.com/sonalraj.sr/"
-              >https://www.instagram.com/sonalrajsr/</a
-            >
-          </div>
-          <div class="contact">
-            <a href="https://github.com/sonalrajsr"><h3>github</h3></a>
-            <a href="https://github.com/sonalrajsr"
-              >https://github.com/sonalrajsr</a
-            >
-          </div>
-          <div class="contact">
-            <a href="https://www.facebook.com/rajsonalrs"><h3>facebook</h3></a>
-            <a href="https://www.facebook.com/rajsonalrs"
-              >https://www.facebook.com/rajsonalrs</a
-            >
-          </div>
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/sonalrajsr/">
+            <h3>Linkdin</h3>
+          </a>
+          <a href="https://www.linkedin.com/in/sonalrajsr/">https://www.linkedin.com/in/sonalrajsr/</a>
         </div>
-        <div class="collaborate">
-          <img src="./assets/arrow.png" alt="" />
-          <h2>Let's collaborate</h2>
+        <div class="contact">
+          <a href="https://twitter.com/sonalrajsr">
+            <h3>X</h3>
+          </a>
+          <a href="https://twitter.com/sonalrajsr">https://twitter.com/sonalrajsr</a>
+        </div>
+        <div class="contact">
+          <a href="https://www.instagram.com/sonalraj.sr/">
+            <h3>instagram</h3>
+          </a>
+          <a href="https://www.instagram.com/sonalraj.sr/">https://www.instagram.com/sonalrajsr/</a>
+        </div>
+        <div class="contact">
+          <a href="https://github.com/sonalrajsr">
+            <h3>github</h3>
+          </a>
+          <a href="https://github.com/sonalrajsr">https://github.com/sonalrajsr</a>
+        </div>
+        <div class="contact">
+          <a href="https://www.facebook.com/rajsonalrs">
+            <h3>facebook</h3>
+          </a>
+          <a href="https://www.facebook.com/rajsonalrs">https://www.facebook.com/rajsonalrs</a>
         </div>
       </div>
+      <div class="collaborate">
+        <img src="./assets/arrow.png" alt="" />
+        <h2>Let's collaborate</h2>
+      </div>
     </div>
-    <!-- Html code is finished here -->
-    <script
-      src="https://kit.fontawesome.com/1f08936ec0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
-      integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
-      integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
-      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <!-- Html code is finished here -->
+  <script src="https://kit.fontawesome.com/1f08936ec0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+    integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+    integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+    integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
